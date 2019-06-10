@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+{% extends 'mainapp/Templates/main.html' %}
 
-</head>
-<body>
+{% block content %}
 <h1 class="contact">This contact page</h1>
-<ul>
-    <li><a href="/">На главную</a></li>
-    <li><a href="/contact">Контакты</a></li>
-    <li><a href="/about">О ресурсе</a></li>
-</ul>
-</body>
-</html>
+ {% include 'mainapp/Templates/menu.html' %}
+{% endblock %}
