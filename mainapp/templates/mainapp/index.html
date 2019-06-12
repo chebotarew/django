@@ -1,6 +1,8 @@
 {% extends 'mainapp/Templates/main.html' %}
 
 {% block content %}
-<h1 class="main">{{title}}</h1>
+<h1 class="main">{{page.name}}</h1>
+<p>{{page.text}}</p>
+<img src="/media/{{page.image}}" alt="" width=100px, height=100px>
  {% include 'mainapp/Templates/menu.html' %}
 {% endblock %}
